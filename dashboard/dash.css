@@ -1,0 +1,82 @@
+/* Basic reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.dashboard {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for the grid */
+  gap: 2px; /* Gap between thumbnails */
+}
+
+.quick-link {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 70%;
+  height: 70%;
+  padding: 5px;
+}
+
+.quick-link a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.quick-link img {
+  width: 100%; /* Full width inside the container */
+  height: 100%;
+  border-bottom: 1px solid #ccc; /* Adding a border at the bottom of each thumbnail */
+  object-fit: contain;
+  object-position: center;
+}
+
+.quick-link span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+}
+
+button {
+  font-weight: bold;
+  padding: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(177, 238, 245, 1);
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 10%;
+  height: 10%;
+  margin-top: 220px;
+  align-items: start;
+  align-content: start;
+  left: 20px; /* Adjust the left position as needed */
+  top: 0px; /* Adjust the top position as needed */
+  padding: 10px 15px; /* Adjust padding as per your design */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  position: absolute;
+}
+
+button:hover {
+  background-color: whitesmoke;
+}
+
